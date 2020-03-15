@@ -36,7 +36,8 @@ button, .button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background:none;
+    transition: 0.2s;
 }
 form{
     display: grid;
@@ -87,4 +88,11 @@ a{
     position: absolute;
     margin-left: 50%;
     margin-top: 10%;
+}
+button:active{
+    border:2px solid rgb(170, 131, 3);
+    box-shadow: 0 0 10px rgb(170, 131, 3);
+}
+button:focus{
+    outline: none;
 }
