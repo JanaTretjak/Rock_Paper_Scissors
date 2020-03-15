@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: white;
+}
+p{
+    font-size: 3vh;
+    margin: 0;
+    padding: 0 0.5vh 2vh;
+}
+.div{
+   border: 2px solid white;
+   border-radius: 5px;
+   margin: 5vh auto;
+   width: 40vh;
+   padding: 2vh;
+   position: relative;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+#rounds{
+    display: none;
+}
+button, .button{
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 5vh;
+    height: 8vh;
+    width: 8vh;
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+form{
+    display: grid;
+    grid-template-columns: 10% 40% 10% 40%;
+    text-align: left;
+    padding-left: 2vh;
+}
+h2{
+    font-size: 5vh;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 5vh;
+    margin: 0;
+    padding: 0 1vh;
+}
+h4{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+a{
+    color: rgb(170, 131, 3);
+    font-size: 2.5vh;
+}
+#hier{
+    position: relative;
+    animation: move 1s infinite;
+    display: none;
+    transition: .3s;
+}
+@keyframes move{
+    0%, 100%{top:0}
+    50%{top:1vh}
+}
+.red{
+    background-color: red;
+    padding: 0.5vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.user{
+    position: absolute;
+    margin-left: -50%;
+    margin-top: 10%;
+}
+.comp{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
+}

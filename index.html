@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="div">
+        <p>How many rounds?</p>
+        <div id="rounds">
+            <div class="flex">
+                <p id="roundOf"></p>
+                <p>/</p>
+                <p id="round"></p>
+            </div>
+        </div>
+
+        <form id="radio">
+            <input type="radio" name="round" id="fünf" value="5" checked>
+            <label>5</label>
+            <input type="radio" name="round" id="zehn" value="10">
+            <label>10</label>
+            <input type="radio" name="round" id="fünfzehn" value="15">
+            <label>15</label>
+            <input type="radio" name="round" id="zwanzig" value="20">
+            <label>20</label>
+        </form>
+    </div>
+    <div class="div flex">
+        <div class="red user">You</div>
+        <div class="button" id="spielerChoose"></div>
+        <h3 id="spieler">0</h3>
+        <h3>:</h3>
+        <h3 id="computer">0</h3>
+        <div class="button" id="computerChoose"></div>
+        <div class="red comp">Comp</div>
+    </div>
+    <h2 id="result">Let's play</h2>
+    <div class="flex" id="buttons">
+        <button onclick="play(1)">✊</button>
+        <button onclick="play(2)">🤚</button>
+        <button onclick="play(3)">✌️</button>
+    </div>
+    <h4 id="move">MAKE YOUR MOVE.</h4>
+    <h2 id="hier">👇</h2>
+    <a href="index.html">restart</a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
